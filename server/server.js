@@ -39,8 +39,8 @@ app.use(cors({
     'capacitor://localhost',       // iOS Capacitor
     'ionic://localhost',           // Android Capacitor
     'http://localhost',            // localhost general
-    'http://localhost:3000',       // localhost alternativo
-    'http://127.0.0.1:5500',       // otro localhost alternativo
+    'http://localhost:3000',       // localhost alternativo 
+    'https://lingua-go-final-production.up.railway.app', // otro localhost alternativo (RAILWAY)
   ],
   credentials: true
 }));
