@@ -369,10 +369,6 @@ app.use(express.static("../"));
 // ============================================================
 // //  ESTO FUNCIONA EN TU PC Y EN RAILWAY
 const PORT = process.env.PORT || "http://localhost:4000";
-app.listen(process.env.PORT, () => {
+app.listen(8080, () => {
   console.log("Servidor SQLite ejecutándose en https://lingua-go-final-production.up.railway.app");
-});
-
-app.listen(4000, () => {
-  console.log("Servidor SQLite ejecutándose en http://localhost:4000");
 });
