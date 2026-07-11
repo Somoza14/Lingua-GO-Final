@@ -49,7 +49,7 @@ app.use(express.json()); // Permite recibir JSON en el body de las peticiones
 // ============================================================
 // CONEXIÓN A LA BASE DE DATOS SQLITE
 // ============================================================
-const db = new Database("database.db");
+const db = new sqlite3.Database('/data/database.sqlite');
 
 // ============================================================
 // INICIALIZAR BASE DE DATOS
