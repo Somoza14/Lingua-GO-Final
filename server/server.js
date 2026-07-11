@@ -23,7 +23,7 @@
 // ============================================================
 const express = require("express");
 const cors = require("cors");
-const Database = require("better-sqlite3");
+const db = new Database(process.env.DB_PATH || 'database.sqlite');
 const bcrypt = require("bcrypt");
 
 // ============================================================
