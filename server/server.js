@@ -147,7 +147,7 @@ app.post("/api/login", async (req, res) => {
 // ============================================================
 // Verifica el token de Google y registra/loguea al usuario
 const { OAuth2Client } = require('google-auth-library');
-const client = new OAuth2Client("54620961497-8rrjoce3u786t8vpjm4kq739qobbncsn.apps.googleusercontent.com");
+const client = new OAuth2Client("1020252781524-ofd58tkv7rpuvles3odrlb3mltjpgrgb.apps.googleusercontent.com");
 
 app.post("/api/auth/google", async (req, res) => {
   const { token } = req.body;
@@ -162,7 +162,7 @@ app.post("/api/auth/google", async (req, res) => {
     // ============================================================
     const ticket = await client.verifyIdToken({
       idToken: token,
-      audience: "54620961497-8rrjoce3u786t8vpjm4kq739qobbncsn.apps.googleusercontent.com",
+      audience: "1020252781524-ofd58tkv7rpuvles3odrlb3mltjpgrgb.apps.googleusercontent.com",
     });
     const payload = ticket.getPayload();
 
