@@ -23,7 +23,7 @@
 // ============================================================
 const express = require("express");
 const cors = require("cors");
-const Database = require("/data/database.sqlite");
+const Database = require("better-sqlite3");
 const bcrypt = require("bcrypt");
 
 // ============================================================
@@ -49,7 +49,7 @@ app.use(express.json()); // Permite recibir JSON en el body de las peticiones
 // ============================================================
 // CONEXIÓN A LA BASE DE DATOS SQLITE
 // ============================================================
-const db = new sqlite3.Database('/data/database.sqlite');
+const db = new Database("database.db");
 
 // ============================================================
 // INICIALIZAR BASE DE DATOS
