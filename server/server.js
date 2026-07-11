@@ -376,3 +376,7 @@ app.listen(8080, () => {
 app.listen(4000, () => {
   console.log("Servidor SQLite ejecutándose en http://localhost:4000");
 });
+
+app.listen(172.1, () => {
+  console.log("Servidor SQLite ejecutándose en https://lingua-go-final-production.up.railway.app");
+});
