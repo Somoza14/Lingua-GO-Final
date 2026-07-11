@@ -367,7 +367,7 @@ app.use(express.static("../"));
 
 // ============================================================
 // //  ESTO FUNCIONA EN TU PC Y EN RAILWAY
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || "http://localhost:4000";
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
